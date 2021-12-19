@@ -1,0 +1,279 @@
+.topbar{
+  background-color:#3CC3E3;
+  width:100%;
+  height:fit-content;
+  background-size: 100%;
+}
+.logo{
+  float:left;
+  width:100px;
+  height:auto;
+}
+
+form.exampl input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  border-left: none;
+  width: 50%;
+  background: white;
+  margin-top: 25px;
+}
+
+form.exampl button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #ddd;
+  color: black;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-radius: 0px 15px 15px 0px;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+form.exampl button:hover {
+  background: #ccc;
+}
+
+form.exampl::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.i img{
+  width:100%;
+  height: auto;
+}
+.mid{
+  margin:3%;
+}
+.h:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cont{
+  text-align: center;
+  padding: 10px 20px;
+}
+.button {
+  background-color: white;
+  border: 1px solid grey;
+  border-right: none;
+  border-radius: 15px 0px 0px 15px;
+  color: #D5F2EE;
+  padding: 11px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px 4px 47px;
+  cursor: pointer;
+  float: left;
+  margin-top: 25px;
+}
+.button::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.login{
+  float:left;
+  margin: 35px;
+}
+.sd{
+  font:50px;
+}
+.sd a{
+  padding:10px;
+  text-decoration: none;
+  color:white;
+}
+.content{
+  background-image: url("./images/slider-hero-bg.jpg");
+  width : 100%;
+  height : 42vw;
+  background-repeat: no-repeat;
+}
+#cont{
+  padding: 1%;
+}
+.covid{
+  padding: 1%;
+  border : none;
+  border-radius: 7%;
+  background-color: #ff3300;
+  color:white;
+  width:fit-content;
+  height: fit-content;
+}
+.zoom{
+  animation: zoom 0.4s;
+}
+.margin{
+  margin: 7vw 0 0 17vw;
+}
+.klc{
+  
+  border-left:3px solid #ff3300;
+  padding: 3px;
+}
+.bn{
+  margin:25px;
+  padding: 1%;
+  border : none;
+  border-radius: 15px;
+  background-color: #3CC3E3;
+  color:white;
+  width:fit-content;
+  height: fit-content;
+}
+.bn:hover{
+  background-color: #ff3300;
+}
+.bn a:hover{
+  text-decoration: none;
+  color:white
+}
+.bn a{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+.card{
+  border:1px solid grey;
+  margin: 10px;
+  -webkit-box-flex: 1;
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #dfe3e6;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.card1{
+  height: 115px;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  width: 100%;
+}
+._3SYSr {
+  z-index: 2;
+  width: 100%;
+}
+.n7-_C {
+  padding: 15px 25px;
+}
+._2FE4Z._2Jc-Z {
+  transition: opacity .2s linear;
+}
+._2gkPw {
+  background-color: #3bb896;
+}
+.f78Kb {
+  min-width: 135px;
+  border-radius: 6px;
+  padding: 0 25px;
+}
+._2FE4Z {
+  background: #10847e;
+  color: #fff;
+  width: auto;
+  height: 45px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+}
+._3X00m {
+  width: 186px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+._2lS73 {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+
+._3wNm5 {
+  display: flex;
+  margin: 30px 0;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.NPhZP {
+  -webkit-box-flex: 1;
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #dfe3e6;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 20px;
+  background: #fff;
+  text-decoration: none;
+}
+
+._38y2t {
+  background: #fdf2d2;
+}
+.wurhI {
+  background: #d6f0ff;
+}
+._2BrV1 {
+  background-color: #00b9e1;
+}
+._2JGTC {
+  background: rgba(53,194,169,.24);
+}
+._1od7Z {
+  height: 115px;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  width: 100%;
+}
+.ehWRW {
+  background-color: #fc8019;
+}
+.DDfqz {
+  font-size: 20px;
+  color: #4f585e;
+  padding-right: 15px;
+}
+._2HnaH {
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  height: 115px;
+  padding: 30px 25px;
+}
+.dis{
+  display: block;
+}
+@keyframes zoom{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+@media screen and (max-width: 900px) {
+  .dis{
+    display: none;
+  }
+}
