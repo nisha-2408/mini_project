@@ -6,30 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MedWay-Home</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Pacifico&family=Palette+Mosaic&family=Playfair+Display:wght@600&family=Cabin+Sketch:wght@700&&family=Style+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Mukta&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://kit.fontawesome.com/4a6a8e48e5.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="home.js"></script>
   </head>
   <body>
     <div>
-    <div class="topbar">
-      <div class="w3-container bar" id="Bar" width="100%">
-      <img src="./images/MedWay-logos_white.png" class="logo" alt="logo">
+    <div class="topbar" id="lkg">
+      <div class="row">
+      <div class="col-2">
+      <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo"></center></div>
+      <div class="col-7">
       <button class="button">Select Pincode  <i class="fas fa-caret-down"></i></button>
       <form class="exampl">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
+      </form></div>
+      <div class="col-3">
         <span class="login">
           <div class="sd">
-            <a href="#"><i class="fas fa-users"></i>LOGIN/SIGN UP</a>
+            <a href="login.html"><i class="fas fa-users"></i>LOGIN/SIGN UP</a>
             <a href="#"><i class="fas fa-cart-plus"></i>CART</a>
           </div>
         </span>
-      </form>
       </div>
+      </div>
+    </div>
+    <div class="topbar nkn">
+      <div>
+          <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo" style="float: left;"></center>
+          <i class="fas fa-bars menu" style="float: right;"></i>
+      </div>  
+      <div>
+        <form class="exampl">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="loj">
+      <a href="#"><img src="./images/mobbg.jpg" style="width: 100%; height: auto;"></a>
     </div>
     <div class="content">
       <div class="row" id="cont">
@@ -45,58 +67,48 @@
         <div class="col dis"><img src="./images/slider-hero-img.png" class="zoom"></div>
       </div>
       </div>
-      <div class="_3wNm5" style="margin: 20px;">
-        <a href="#" class="NPhZP">
-          <div class="_1od7Z _2JGTC"></div>
-          <div class="_3SYSr">
-            <div class="_2HnaH">
-              <div class="DDfqz">Order Medicines</div>
-            </div>
-            <div class="n7-_C">
-              <button class="_2FE4Z _2Jc-Z _2Jc-Z f78Kb _2gkPw" type="submit">Order Now</button>
-            </div>
+      <div class="row margin1">
+        <div class="col pad">
+          <div class="x">
+            <h4 style="float: left; padding: 3%;">Order Medicines</h4>
+            <img src="./images/medicine.png" style="float: right;">
           </div>
-          <div class="_3X00m">
-            <img class="_2lS73" src="./images/medicine.png">
+          <div style="padding: 7%;">
+          <div class="btn1 y">
+            <h6>Order Now</h6>
+          </div></div>
+        </div>
+        <div class="col pad">
+          <div class="x1">
+            <h4 style="float: left; padding: 3%;">HealthCare Products</h4>
+            <img src="./images/healthcare.png" style="float: right;">
           </div>
-        </a>
-        <a href="#" class="NPhZP">
-          <div class="_1od7Z _38y2t"></div>
-          <div class="_3SYSr">
-            <div class="_2HnaH">
-              <div class="DDfqz">HealthCare Products</div>
-            </div>
-            <div class="n7-_C">
-              <button class="_2FE4Z _2Jc-Z _2Jc-Z f78Kb ehWRW" type="submit">Order Now</button>
-            </div>
+          <div style="padding: 7%;">
+             <div class="btn1 y1">
+               <h6>Order Now</h6>
+             </div>
           </div>
-          <div class="_3X00m">
-            <img class="_2lS73" src="./images/healthcare.png">
+        </div>
+        <div class="col pad">
+          <div class="x2">
+            <h4 style="float: left; padding: 3%;">Symtoms Check</h4>
+            <img src="./images/symptom.png" style="float: right;">
           </div>
-        </a>
-        <a href="#" class="NPhZP">
-          <div class="_1od7Z wurhI"></div>
-          <div class="_3SYSr">
-            <div class="_2HnaH">
-              <div class="DDfqz">Symptoms Check</div>
-            </div>
-            <div class="n7-_C">
-              <button class="_2FE4Z _2Jc-Z _2Jc-Z f78Kb _2BrV1" type="submit">Check Now</button>
-            </div>
-          </div>
-          <div class="_3X00m">
-            <img class="_2lS73" src="./images/symptom.png">
-          </div>
-        </a>
-        
+          <div style="padding: 7%;">
+          <div class="btn1 y2">
+            <h6>Check Now</h6>
+          </div></div>
+        </div>
       </div>
        <div class="row" style="margin: 10px;">
-        <div class="col i"><img src="./images/safe.png"></div>
+        <div class="col-3 i"><img src="./images/safe.png"></div>
+        <div class="col-8">
+        <div class="row">
         <div class="col i"><img src="./images/safe1.png"></div>
         <div class="col i"><img src="./images/safe2.png"></div>
         <div class="col i"><img src="./images/safe3.png"></div>
         <div class="col i"><img src="./images/safe4.png"></div>
-        <div class="col i"><img src="./images/safe5.png"></div>   
+        <div class="col i"><img src="./images/safe5.png"></div></div></div> 
     </div>
     <div class="mid">
       <h2>FEATURED BRANDS</h2>
@@ -122,41 +134,41 @@
       <div class="col h">
         <img src="./images/Volini.png" style="width: 100%;">
       </div>
-      <div class="col h">
+      <div class="col h" id="ui">
         <img src="./images/Liveasy.jpg" style="width: 100%;">
       </div>
-      <div class="col h">
+      <div class="col h" id="ul">
         <img src="./images/Nivea.jpg" style="width: 100%;">
       </div>
     </div>
     <div>
       <img src="./images/banner.webp" style="width: 100%; height: auto; margin: 5px; padding: 5px;">
     </div>
-    <div class="mid">
+    <div class="mid" id="li">
       <h3>Top Categories</h3>
       <p style="float: right;">View All</p>
     </div>
-    <div class="row" style="margin: 10px; padding: 5px;">
-      <div class="col">
+    <div class="row" style="margin: 10px; padding: 5px;" id="li1">
+      <div class="col h1">
         <img src="./images/devices.jpg">
       </div>
-      <div class="col">
+      <div class="col h1">
         <img src="./images/Ayurvedic.jpg">
       </div>
-      <div class="col">
+      <div class="col h1">
         <img src="./images/Nutrition.jpg">
       </div>
-      <div class="col">
+      <div class="col h1">
         <img src="./images/baby.jpg">
       </div>
     </div>
     <div class="mid">
       <h3>Top Articles</h3>
-      <a href="#" style="float: right; padding: 5px;"><i class="fas fa-arrow-right"></i></a>
-      <a href="#" style="float: right; padding: 5px;"><i class="fas fa-arrow-left"></i></a>
+      <i class="fas fa-arrow-right" style="color:black; float: right; padding: 1%;" onclick="openSide()"></i>
+      <i class="fas fa-arrow-left" style="color:black; float: right; padding: 1%;" onclick="myClose()"></i>
     </div>
     <div class="row" style="margin: 10px; padding: 5px;">
-      <div class="col">
+      <div class="col" id="klo">
         <img src="./images/mask lady.jpg" style="width: 100%; height: auto; border-radius:5%;">
         <div class="cont">
           <h4>Omicron Cases Outbreak-Total Case,Latest Updates</h4>
@@ -174,7 +186,7 @@
           </p>
         </div>
       </div>
-      <div class="col">
+      <div class="col" id="lo">
         <img src="./images/heart.jpg" style="width: 100%; height: auto; border-radius:5%;">
         <div class="cont">
           <h4>Why Do More People Get Heart Attacks In Winter?</h4>
@@ -183,30 +195,39 @@
           </p>
         </div>
       </div>
+      <div class="col" id="hello" style="display: none;">
+        <img src="./images/vaccine.webp" style="width: 100%; height: auto; border-radius:5%;">
+        <div class="cont">
+          <h4>Covaxin Vs Covishield</h4>
+          <p>Both Covishield and Covaxin are two doses of Covid-19 vaccine. However, in an 
+            important concept considered to be an inadvertent error....
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col" style="padding: 5%;">
+    <div class="row" id="so">
+      <div class="col-3" style="padding: 5%;">
         <img src="./images/ppls.svg" style="width: 100%; height: auto;">
         <div>
           <h2>25*10</h2>
           <h4>Registered Users as of December 2021</h4>
         </div>
       </div>
-      <div class="col" style="padding: 5%;">
+      <div class="col-3" style="padding: 5%;">
         <img src="./images/scooter.svg" style="width: 100%; height: auto;">
         <div>
           <h2>Just 10</h2>
           <h4>MedWay orders as of 2021</h4>
         </div>
       </div>
-      <div class="col" style="padding: 5%;">
+      <div class="col-3" style="padding: 5%;">
         <img src="./images/tablets.svg" style="width: 100%; height: auto;">
         <div>
           <h2>100+</h2>
           <h4>SKUs sold in 2021</h4>
         </div>
       </div>
-      <div class="col" style="padding: 5%;">
+      <div class="col-3" style="padding: 5%;">
         <img src="./images/location.svg" style="width: 100%; height: auto;">
         <div>
           <h2>18+</h2>
@@ -220,7 +241,7 @@
         <h5>Sed ut perspiciatis unde omnis iste natus error</h5>
       </center>
     </div>
-    <div class="row" style="padding: 3%;">
+    <div class="row" id="il" style="padding: 3%;">
       <div class="col-2">
       <a href="#" style="padding: 40%; float:left;"><i class="fas fa-chevron-circle-left fa-3x"></i></a>
       </div>
@@ -228,7 +249,7 @@
         <div class="row">
       <div class="col-6" style="border: 1px solid black; padding:2%;">
         <div>
-          <img src="./images/test image.webp" style="width:100px; height:auto; float: left;">
+          <img src="./images/test image.webp">
           <span style="float:right;">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -237,7 +258,7 @@
             <i class="far fa-star"></i>
           </span>
         </div>
-        <div class="cont" style="padding: 5%;">
+        <div class="cont1" style="padding: 5%;">
           <h4>have to write something...have no idea what to write....just filling 
             the gaps...if u are good at writing and lying ...please write these reviews for us
           </h4>
@@ -245,7 +266,7 @@
       </div>
       <div class="col-6" style="border: 1px solid black; padding:2%">
         <div>
-          <img src="./images/test image.webp" style="width:100px; height:auto; float: left;">
+          <img src="./images/test image.webp">
           <span style="float:right;">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -254,7 +275,7 @@
             <i class="fas fa-star-half-alt"></i>
           </span>
         </div>
-        <div class="cont" style="padding: 5%;">
+        <div class="cont1" style="padding: 5%;">
           <h4>have to write something...have no idea what to write....just filling 
             the gaps...if u are good at writing and lying ...please write these reviews for us
           </h4>
@@ -298,11 +319,11 @@
       </div>
       <div class="col" style="padding: 5%;">
         <h2>Contact Us</h2>
-        <div>
-        <span><i class="fas fa-location-arrow fa-2x"></i>
-        <h6>KlbTheme, 789 Main rd,
+        <div class="row">
+        <i class="fas fa-location-arrow fa-2x" style="float: left;"></i>
+        <h6 style="float: right;">KlbTheme, 789 Main rd,
           Anytown, CA 12345 USA
-        </h6></span>
+        </h6>
       </div>
       <div>
         <span><i class="fas fa-phone fa-2x"></i>
