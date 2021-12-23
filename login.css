@@ -72,14 +72,14 @@
     .mar{
         display: flex;
         justify-content: center;
-        position: absolute;
+        position: relative;
         top: 15%;
         transform: translate(0, 5%);
     }
     .mar1{
         display: flex;
         justify-content: center;
-        position: absolute;
+        position: relative;
         top: 15%;
         transform: translate(0, 5%);
     }

@@ -217,6 +217,42 @@ form.exampl::after {
   border-left:3px solid #ff3300;
   padding: 3px;
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(104, 235, 235);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 .bn{
   margin:25px;
   padding: 1%;
@@ -305,7 +341,7 @@ form.exampl::after {
     display: none;
   }
   form.exampl input[type=text] {
-    width: 60%;
+    width: 40%;
     border: 1px solid grey;
   }
   form.exampl button {

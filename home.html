@@ -18,6 +18,12 @@
   </head>
   <body>
     <div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Select Pincode</a>
+        <a href="login.html">Login/Sign Up</a>
+        <a href="cart.html">Cart</a>
+      </div>
     <div class="topbar" id="lkg">
       <div class="row">
       <div class="col-2">
@@ -32,7 +38,7 @@
         <span class="login">
           <div class="sd">
             <a href="login.html"><i class="fas fa-users"></i>LOGIN/SIGN UP</a>
-            <a href="#"><i class="fas fa-cart-plus"></i>CART</a>
+            <a href="cart.html"><i class="fas fa-cart-plus"></i>CART</a>
           </div>
         </span>
       </div>
@@ -41,7 +47,7 @@
     <div class="topbar nkn">
       <div>
           <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo" style="float: left;"></center>
-          <i class="fas fa-bars menu" style="float: right;"></i>
+          <i class="fas fa-bars menu" style="float: right;" onclick="openNav()"></i>
       </div>  
       <div>
         <form class="exampl">
