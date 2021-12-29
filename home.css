@@ -177,11 +177,10 @@ form.exampl::after {
   display: table;
 }
 .login{
-  float:left;
   margin: 35px;
 }
 .sd{
-  font:50px;
+  font:45px;
 }
 .sd a{
   padding:10px;

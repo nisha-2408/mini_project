@@ -1,0 +1,147 @@
+.topbar2{
+    width:100%;
+    height:fit-content;
+    background-color:#3CC3E3;
+}
+.id{
+    background-image: url("./images/cartbg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.top{
+    position: sticky;
+    top:0;
+    background: rgba(255, 255, 255, 0.808);
+    backdrop-filter: blur(1.5rem);
+}
+.container1 {
+    background: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(9px);
+    border-radius: 15px;
+    padding: 5%;
+    animation: zoom 0.4s;
+}
+table.ts td{
+    width: 75%;
+}
+table.ts th{
+    height: 75% ;
+}
+table.ts td{
+    height: 75%;
+}
+.check{
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 2%;
+    background-color: #3CC3E3;
+    color: white;
+    text-align: center;
+}
+.width{
+    width: 100%;
+}
+.height{
+    height: 100%;
+}
+.overflow{
+    height: 37vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: left;
+    
+}
+.btm{
+    background: rgba(255, 255, 255, 0.808);
+    backdrop-filter: blur(1.5rem);
+    position: sticky;
+    bottom: 0;
+    padding-bottom: 0% !important;
+}
+.second{
+    padding: 7%;
+}
+.cart{
+    padding: 5%;
+}
+button{
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    touch-action: manipulation;
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.qty{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.qty input{
+    width: 7rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 1px solid grey
+}
+.qty button{
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 2rem;
+    background: grey;
+}
+.qty button.qtyminus{
+    margin-right: 0.3rem;
+}
+.qty button.qtyplus{
+    margin-left: 0.3rem;
+}
+th, td{
+    padding:25px;
+}
+.img1 img{
+    width: 100px;
+    height: auto;
+}
+.table td{
+    text-align: end;
+}
+#jig{
+    background-image: url("./images/mobile_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+.log1{
+    border:none;
+    border-radius: 25px;
+    padding: 5%;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.2s;
+    background-color: #00ccff;
+    width:100%;
+}
+@media screen and (max-width: 900px) {
+    .id{
+        background-image: none;
+    }
+    .cart{
+        display: none;
+    }
+    .container1{
+        backdrop-filter: blur(5px);
+    }
+    #jig{
+        display: block;
+        padding: 2%;
+    }
+}

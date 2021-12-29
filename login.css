@@ -1,7 +1,8 @@
-.bg{
-    background-image: url("./images/bg1.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
+.topbar1{
+    background-color:#3CC3E3;
+    width:100%;
+    height:fit-content;
+    background-size: 100%;
 }
 .crd{
     height: max-content;
@@ -34,12 +35,10 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: transform 0.2s;
     background-color: white;
+    width:100%;
 }
-.log a{
-    text-decoration: none;
-    color:#00ccff;
-}
-.log a:hover{
+
+.log:hover{
     color: #00ccff;
 }
 .mar{

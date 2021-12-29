@@ -26,7 +26,7 @@
             <a href="home.html">Home</a>
             <a href="cart.html">Cart</a>
           </div>
-            <div class="topbar" id="lkg">
+            <div class="topbar1" id="lkg">
                 <div class="row">
                 <div class="col-2">
                 <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo"></center></div>
@@ -40,13 +40,14 @@
                   <span class="login">
                     <div class="sd">
                       <a href="home.html"><i class="fas fa-home"></i>HOME</a>
+                      <a href="profile.html"><i class="fas fa-address-card"></i>PROFILE</a>
                       <a href="cart.html"><i class="fas fa-cart-plus"></i>CART</a>
                     </div>
                   </span>
                 </div>
                 </div>
               </div>
-              <div class="topbar nkn">
+              <div class="topbar1 nkn">
                 <div>
                     <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo" style="float: left;"></center>
                     <i class="fas fa-bars menu" style="float: right;" onclick="openNav()"></i>
@@ -58,7 +59,7 @@
                   </form>
                 </div>
               </div>
-              <div class="row bg">
+              <div class="row">
                   <div class="col w3-animate-left" id="img1">
                     <img src="./images/bg.png">
                   </div>
@@ -68,7 +69,7 @@
                         <h2 style="text-align: center;">LOGIN</h2>
                       </div>
                       <div>
-                        <form style="padding:0% 10% 0% 10%;">
+                        <form style="padding:0% 10% 0% 10%;" action="home.html">
                           <label for="uname">User Name: </label><br>
                           <input type="text" id="uname" name="uname" class="form" placeholder="&#xf007; Enter your username" style="font-family:Arial, FontAwesome"><br>
                           <label for="password">Password: </label><br>
@@ -76,9 +77,8 @@
                         </form>
                           <a href="#" style="margin-right:2%;"><p style="text-align: right;">Forgot Password?</p></a>
                           <div style="padding:1% 10% 1% 10%;">
-                          <div class="log">
-                            <a href="#"><h5 style="text-align: center;">LOGIN</h5></a>
-                          </div></div>
+                               <button type="submit" class="log"><h5>LOGIN</h5></button>
+                          </div>
                           <div style="padding: 1%; text-align: center;">
                             <p>Or Login using</p>
                             <div style="padding:0% 3% 0% 3%;">
@@ -100,7 +100,7 @@
                           <h2 style="text-align: center;">SIGN UP</h2>
                         </div>
                         <div>
-                          <form style="padding:0% 10% 0% 10%;">
+                          <form style="padding:0% 10% 0% 10%;" action="home.html">
                             <label for="uname">User Name: </label><br>
                             <input type="text" id="uname" name="uname" class="form" placeholder="&#xf007; Enter your username" style="font-family:Arial, FontAwesome"><br>
                             <label for="password">Password: </label><br>
@@ -110,17 +110,21 @@
                             <input type="checkbox"><p>Remember Me</p>
                           </form>
                           <div style="padding:1% 10% 1% 10%;">
-                            <div class="log">
-                              <a href="#"><h5 style="text-align: center;">SIGN UP</h5></a>
-                            </div></div>
+                            <button type="submit" class="log"><h5>SIGN UP</h5></button></div>
                             <div style="text-align: center;">
                               <p>Already Registered?</p>
                               <div style="padding:1% 10% 1% 10%;">
-                              <h5 style="cursor: pointer;" class="log" onclick="login()">Login</h5><br></div>
+                              <h5 style="cursor: pointer;" class="log" onclick="login()">LOGIN</h5><br></div>
                             </div>
                         </div>
                       </div>
                   </div>
+                  
               </div>
+              <div style="padding: 3%;">
+                <div style=" padding: 2%; border-top: 1px solid rgba(172, 168, 168, 0.719);">
+                  <h6 style="color:rgba(172, 168, 168, 0.719);">Copyright 2021.Nisha . All rights reserved.</h6>
+                </div></div>
+        </div>
     </body>
 </html>
