@@ -18,6 +18,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="home.js"></script>
+        <script type="text/javascript" src="cart.js"></script>
     </head>
     <body>
         <div class="id">
@@ -71,39 +72,39 @@
                          <th><h4>Quantity</h4></th>
                          <th><h4>Total</h4></th>
                        </tr>
-                       <tr>
+                       <tr id="y1">
                          <td>
                            <img src="images/dolo.png" style="width:100px; height:100px;">
                           <h6>Dolo 650mg</h6></td>
-                         <td><h6>₹25</h6></td>
+                         <td><h6 id="y">₹25</h6></td>
                          <td>
-                           <input type="number" name="qty" id="qty" min="1" max="5" step="1" value="1">
+                           <input type="number" name="qty" id="qty" min="0" max="5" step="1" value="1" onChange="calcid()">
                          </td>
-                         <td><h6>₹25</h6></td>
+                         <td><h6 id="x">₹25</h6></td>
                        </tr>
                        <tr>
                         <td>
                           <img src="images/cetrizine.jpg" style="width:100px; height:100px;">
                          <h6>Cetirizine</h6></td>
-                        <td><h6>₹25</h6></td>
+                        <td><h6>₹15</h6></td>
                         <td>
-                          <input type="number" name="qty" id="qty" min="1" max="5" step="1" value="1">
+                          <input type="number" name="qty" id="qty1" min="0" max="5" step="1" value="1" onChange="calcic()">
                         </td>
-                        <td><h6>₹25</h6></td>
+                        <td><h6 id="x1">₹15</h6></td>
                       </tr>
                       <tr>
                         <td>
                           <img src="images/dolo.png" style="width:100px; height:100px;">
                          <h6>Dolo 650mg</h6></td>
-                        <td><h6>₹25</h6></td>
+                        <td><h6>₹35</h6></td>
                         <td>
-                          <input type="number" name="qty" id="qty" min="1" max="5" step="1" value="1">
+                          <input type="number" name="qty" id="qty3" min="0" max="5" step="1" value="1" onChange="calciy()">
                         </td>
-                        <td><h6>₹25</h6></td>
+                        <td><h6 id="x3">₹35</h6></td>
                       </tr>
                       <tr class="btm">
                         <td colspan="3"><h5>Total Amount To Be Paid:</h5></td>
-                        <td><h6>₹75</h6></td>
+                        <td><h6 id="a"></h6></td>
                       </tr>
                      </table>
                   </div>
@@ -140,7 +141,7 @@
                               <label for="address"><h5>Address: </h5></label>
                             </th>
                             <td>
-                              <input type="text" id="address" name="address" class="width">
+                              <input type="text" id="address" name="address" class="width" aria-rowcount="3">
                             </td>
                           </tr>
                           <tr>
@@ -168,7 +169,7 @@
                         <h5>DOLO 650mg</h5>
                         <p>₹25</p>
                         <input type="button" value="-" />
-                        <input type="text" name="quantity" value="1" maxlength="2" max="5" size="1" id="number" />
+                        <input type="text" name="quantity" value="1" maxlength="2" min="0" max="5" size="1" id="number" />
                         <input type="button" value="+" />
                         
                       </div>
@@ -226,4 +227,5 @@
                   </div>
                   
     </body>
+    
     </html>
