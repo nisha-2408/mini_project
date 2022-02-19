@@ -6,6 +6,13 @@ body{
 }
 .color{
     background-color: none;
+    padding: 5%;
+    width: fit-content;
+    transform-style: preserve-3d;
+    animation: flip 0.5s;
+}
+.pers{
+    perspective: 5000px;
 }
 .image img{
     width: 75px;
@@ -15,7 +22,7 @@ body{
     cursor: pointer;
     padding: 5%;
     border-bottom: 1px solid grey;
-    transition: tramsform 0.2s;
+    transition: transform 0.2s;
 }
 .icon:hover{
     transform: scale(1.1);
@@ -59,6 +66,10 @@ body{
 }
 #xo{
     display: none;
+}
+@keyframes flip{
+    from{transform: rotateY(90deg);}
+    to{transform: rotateY(0deg);}
 }
 @media screen and (max-width: 900px) {
     #row{

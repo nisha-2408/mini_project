@@ -9,6 +9,10 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.a a{
+    color: black;
+    text-decoration: none;
+}
 .top{
     position: sticky;
     top:0;

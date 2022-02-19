@@ -66,7 +66,7 @@
       </div>
     </div>
     <div class="row padd" id="row">
-      <div class="col-4 ">
+      <div class="col-4" style=" padding-right:3%; border-right: 1px solid grey;">
         <a href="login.html">
           <div class="row">
             <div class="col-2 image">
@@ -90,32 +90,41 @@
           <h5 class="icon"><i class="fas fa-bell"></i> My Notifications <i class="fas fa-angle-right"></i></h5>
         </div>
       </div>
-      <div class="col-8 color" id="order" style="display: none;">
-        <center><img src="./images/empty_cart.png" style="width: 50%; height: 65%;"></center>
-      </div>
-      <div class="col-8 color" id="notify" style="display: none;">
-        <center><img src="./images/undraw_Credit_card_re_blml.png" style="width: 40%; height: 55%;"></center>
-        <div>
-          <center>
-            <div class="card-button" onclick="order4()">
-              <h3>Add new Card</h3>
-            </div>
-          </center>
+      <div class="col-1"></div>
+      <div class="col-7 pers" id="order" style="display: none;">
+        <div class="color">
+          <center><img src="./images/empty_cart.png" style="width: 70%; height: 80%;"></center>
         </div>
       </div>
-      <div class="col-8 color" id="wish" style="display: none;">
-        <center><img src="./images/undraw_Wishlist_re_m7tv.png" style="width: 60%; height: 75%;"></center>
+      <div class="col-7 pers" id="notify" style="display: none;">
+        <div class="color">
+          <center><img src="./images/undraw_Credit_card_re_blml.png" style="width: 60%; height: 70%;"></center>
+          <div>
+            <center>
+              <div class="card-button" onclick="order4()">
+                <h3>Add new Card</h3>
+              </div>
+            </center>
+          </div>
+        </div>
       </div>
-      <div class="col-8 color" id="card" style="display: none;">
-        <center><img src="./images/undraw_Fresh_notification_re_whq4.png" style="width: 50%; height: 65%;"></center>
+      <div class="col-7 pers" id="wish" style="display: none;">
+        <div class="color">
+          <center><img src="./images/undraw_Wishlist_re_m7tv.png" style="width: 70%; height: 80%;"></center>
+        </div>
       </div>
-      <div class="col-8 form-pad color" style="display:none;">
+      <div class="col-7 pers" id="card" style="display: none;">
+        <div class="color">
+          <center><img src="./images/undraw_Fresh_notification_re_whq4.png" style="width: 60%; height: 70%;"></center>
+        </div>
+      </div>
+      <div class="col-7 form-pad color" style="display:none;">
         <div class="row">
-          <div class="col-5">
+          <div class="col-4">
             <center><img src="./images/proud-credit-card-character-cartoon-260nw-688501501-removebg-preview.png">
             </center>
           </div>
-          <div class="col-7">
+          <div class="col-8">
             <form>
               <label for="cardno">
                 <h5>Card Number</h5>
@@ -128,7 +137,7 @@
                   </label><br>
                   <input type="text" id="name" name="name"><br>
                 </div>
-                <div class="col-4">
+                <div class="col-8">
                   <label for="date">
                     <h5>Valid Through</h5>
                   </label><br>
@@ -176,53 +185,52 @@
         <center><img src="./images/empty_cart.png" style="width: 50%; height: 65%;"></center>
       </div>
     </div>
-      <div style="padding: 3%;">
-        <div style=" padding: 2%; border-top: 1px solid rgba(172, 168, 168, 0.719);">
-          <h6 style="color:rgba(172, 168, 168, 0.719);">Copyright 2021.Nisha . All rights reserved.</h6>
-        </div>
+    <div style="padding: 3%;">
+      <div style=" padding: 2%; border-top: 1px solid rgba(172, 168, 168, 0.719);">
+        <h6 style="color:rgba(172, 168, 168, 0.719);">Copyright 2021.Nisha . All rights reserved.</h6>
       </div>
     </div>
-    <script>
-      var x = document.querySelector('.padd');
-      var y = x.querySelectorAll(".color");
-      var z = document.getElementById("nisha");
-      console.log(y.length);
-      function order() {
-        y[0].style.display = "block";
-        y[1].style.display = "none";
-        y[2].style.display = "none";
-        y[3].style.display = "none";
-        y[4].style.display = "none";
-      }
-      function order1() {
-        y[1].style.display = "block";
-        y[0].style.display = "none";
-        y[2].style.display = "none";
-        y[3].style.display = "none";
-        y[4].style.display = "none";
-      }
-      function order2() {
-        y[2].style.display = "block";
-        y[1].style.display = "none";
-        y[0].style.display = "none";
-        y[3].style.display = "none";
-        y[4].style.display = "none";
-      }
-      function order3() {
-        y[3].style.display = "block";
-        y[1].style.display = "none";
-        y[2].style.display = "none";
-        y[0].style.display = "none";
-        y[4].style.display = "none";
-      }
-      function order4() {
-        y[3].style.display = "none";
-        y[1].style.display = "none";
-        y[2].style.display = "none";
-        y[0].style.display = "none";
-        y[4].style.display = "block";
-      }
-    </script>
+  </div>
+  <script>
+    var x = document.querySelector('.padd');
+    var y = x.querySelectorAll(".col-7");
+    var z = document.getElementById("nisha");
+    function order() {
+      y[0].style.display = "block";
+      y[1].style.display = "none";
+      y[2].style.display = "none";
+      y[3].style.display = "none";
+      y[4].style.display = "none";
+    }
+    function order1() {
+      y[1].style.display = "block";
+      y[0].style.display = "none";
+      y[2].style.display = "none";
+      y[3].style.display = "none";
+      y[4].style.display = "none";
+    }
+    function order2() {
+      y[2].style.display = "block";
+      y[1].style.display = "none";
+      y[0].style.display = "none";
+      y[3].style.display = "none";
+      y[4].style.display = "none";
+    }
+    function order3() {
+      y[3].style.display = "block";
+      y[1].style.display = "none";
+      y[2].style.display = "none";
+      y[0].style.display = "none";
+      y[4].style.display = "none";
+    }
+    function order4() {
+      y[3].style.display = "none";
+      y[1].style.display = "none";
+      y[2].style.display = "none";
+      y[0].style.display = "none";
+      y[4].style.display = "block";
+    }
+  </script>
 </body>
 
 </html>
