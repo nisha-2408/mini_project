@@ -1,0 +1,159 @@
+.del-pad{
+	padding: 5%;
+}
+.del-col{
+	background-color: white;
+	padding: 1%;
+	margin: 2%;
+	border-radius: 10px;
+}
+#fck input{
+	margin-left: 2%;
+}
+#pay{
+	background-color: #00e64d;
+	border-radius: 7px;
+	color: white;
+	padding: 2%;
+	text-align: center;
+}
+.shad{
+	box-shadow: 2px 4px 46px 17px rgba(235,235,235,1);
+	border-radius: 10px;
+	padding: 3%;
+}
+.shad-act, .shad:hover{
+	border: 2px solid #00e64d;
+}
+.bord{
+	border-top: 7px solid #0073e6;
+	padding: 4%;
+}
+.bod:hover{
+    border: 2px solid #0066ff;
+}
+.bod-act{
+	border: 2px solid #0066ff;
+	border-radius: 10px;
+	padding: 3%;
+}
+.del-det{
+	width: 67%;
+	padding: 2%;
+}
+.som{
+	background-color: #b3ffcc;
+	color: #00e64d;
+	vertical-align: middle;
+	border-radius: 10px;
+	font-weight: bold;
+}
+.del-order{
+	width: 27%;
+	padding: 25px;
+}
+.det{
+	border-top: 3px solid #E0E0E0;
+	border-bottom: 3px dotted #E0E0E0;
+	padding: 3%;
+	color: #787878;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.flex-contain{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: safe flex-start;
+	padding: 2%;
+}
+.act i{
+	background-color: #1aff1a;
+	color: white;
+	border-radius: 50px;
+	padding: 20%;
+}
+.loc-i i{
+	padding: 20%;
+	border: 3px solid #1aff1a;
+	border-radius: 50px;
+	color: #1aff1a;
+}
+.bod{
+	border: 2px solid #C0C0C0;
+	border-radius: 10px;
+	padding: 3%;
+}
+.green{
+	width: 5%;
+}
+.delv{
+	margin-left: 3%;
+	width: 80%;
+}
+.del-style{
+	background-color: #E8E8E8;
+	color: #808080;
+	border-radius: 10px;
+	text-align: center;
+	padding: 7%;
+	position: relative;
+	margin-left: 5%;
+}
+.del-style a{
+	text-decoration: none;
+}
+.valid{
+	border: 1px solid #66ff66;
+	border-radius: 3px;
+}
+.invalid{
+	border: 1px solid #ff3333;
+	border-radius: 3px;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 3px;
+}
+.sub{
+	width: 100%;
+	border-radius: 10px;
+	background-color: #4747d1;
+	color: white;
+}
+.address{
+	top: 50%;
+	left: 50%;
+	transform: translate(23%,5%);
+}
+.addr{
+	padding: 2%;
+	background-color: white;
+	width: 50%;
+}
+.check{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 25px;
+    padding: 5%;
+}
+#overlay{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+}

@@ -348,27 +348,27 @@
           <h3>Filter</h3>
           <div class="category">
             <h5>Category</h5>
-            <div><input type="checkbox" id="cat1" name="cat1">
+            <div><input class="type" type="checkbox" id="cat1" name="cat1" value="Glucometer" onchange="chec(0)">
               <label for="cat1">
                 <h6>Glucometer</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="cat2" name="cat2">
+            <div><input class="type" type="checkbox" id="cat2" name="cat2" value="Bp Monitors" onchange="chec(1)">
               <label for="cat1">
                 <h6>Bp Monitors</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="cat3" name="cat3">
+            <div><input class="type" type="checkbox" id="cat3" name="cat3" value="Oximeter" onchange="chec(2)">
               <label for="cat1">
                 <h6>Oximeter</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="cat4" name="cat4">
+            <div><input class="type" type="checkbox" id="cat4" name="cat4" value="Thermometer" onchange="chec(3)">
               <label for="cat1">
                 <h6>Thermometer</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="cat5" name="cat5">
+            <div><input class="type" type="checkbox" id="cat5" name="cat5" value="Covid" onchange="chec(4)">
               <label for="cat1">
                 <h6>Covid kits</h6>
               </label><br>
@@ -377,27 +377,27 @@
           </div>
           <div class="category">
             <h5>Brand</h5>
-            <div><input type="checkbox" id="br1" name="br1">
+            <div><input class="brand" type="checkbox" id="br1" name="br1" value="Accu-Chek" onchange="check(0)">
               <label for="br1">
                 <h6>Accu-chek</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="br2" name="br2">
+            <div><input class="brand" type="checkbox" id="br2" name="br2" value="Accusure" onchange="check(1)">
               <label for="br2">
                 <h6>Accusure</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="br3" name="br3">
+            <div><input class="brand" type="checkbox" id="br3" name="br3" value="Aiqura" onchange="check(2)">
               <label for="br3">
                 <h6>Aiqura</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="br4" name="br4">
+            <div><input class="brand" type="checkbox" id="br4" name="br4" value="All Care" onchange="check(3)">
               <label for="br4">
                 <h6>All Care</h6>
               </label><br>
             </div>
-            <div><input type="checkbox" id="br5" name="br5">
+            <div><input class="brand" type="checkbox" id="br5" name="br5" value="Apollo Sugar" onchange="check(4)">
               <label for="br5">
                 <h6>Apollo Sugar</h6>
               </label><br>
@@ -457,8 +457,11 @@
             </div>
           </div>
           <div class="row" style="padding: 5%; position: relative; z-index: 0;">
+            <div id="prod" style="display: none;">
+              <img src="./images/business-3d-331.png" style="width: 75%; height: 85%;">
+            </div>
             <div class="col-3 cards card">
-              <a href="device_1.html"><div>
+              <a href="device_1.html" class="info"><div>
                 <center><img src="./images/accu_gluco.jpg" style="height: 90%; width: 70%; padding: 5%;"></center>
               </div>
               <div class="info">

@@ -27,3 +27,24 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+const card = document.getElementById("cardo");
+const inpu = card.querySelectorAll("input");
+
+const reg = {
+  cardno: /^\d{12}$/,
+  name: /^[a-zA-Z\s]{2,30}$/,
+  cvv: /^\d{3}$/
+}
+function validate(field,regex){
+  if(regex.test(field.value)){
+    field.className = "valid";
+  } else {
+    field.className = "invalid";
+  }
+}
+
+inpu.forEach((input)=>{
+  input.addEventListener('keyup',(e)=>{
+    validate(e.target,reg[e.target.attributes.name.value]);
+  })
+})

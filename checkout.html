@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedWay-Cart</title>
+  <link rel="icon" type="image/x-icon" href="./images/MedWay-logos_black.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Mukta&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://kit.fontawesome.com/4a6a8e48e5.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="home.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <div>
+    <div id="overlay">
+      <div class="address">
+        <div class="addr" id="addr">
+            <h3>Billing Address<i class="fas fa-times" style="float: right;" onclick="off()"></i></h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required><br>
+            <label for="telephone"><i class="fas fa-phone"></i> PhoneNumber</label>
+            <input type="text" id="tele" name="telephone" placeholder="6362329506" required><br>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required><br>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York" required><br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" placeholder="NY" required><br>
+            <label for="zip">Zip</label>
+            <input type="text" id="zip" name="zip" placeholder="10001" required><br>
+            <button type="submit" class="sub">
+                  <h5>Submit</h5>
+                </button>
+          </div>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Select Pincode</a>
+      <a href="login.html">Login/Sign Up</a>
+      <a href="cart.html">Cart</a>
+    </div>
+    <div class="topbar" id="lkg">
+      <div class="row">
+        <div class="col-2">
+          <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo"></center>
+        </div>
+        <div class="col-7">
+          <button class="button">Select Pincode <i class="fas fa-caret-down"></i></button>
+          <form class="exampl">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="col-3">
+          <span class="login">
+            <div class="sd">
+              <a href="profile.html"><i class="fas fa-address-card"></i>PROFILE</a>
+              <a href="login.html"><i class="fas fa-users"></i>LOGIN/SIGN UP</a>
+              <a href="cart.html"><i class="fas fa-cart-plus"></i>CART</a>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="topbar nkn">
+      <div>
+        <center><img src="./images/MedWay-logos_white.png" class="logo" alt="logo" style="float: left;"></center>
+        <i class="fas fa-bars menu" style="float: right;" onclick="openNav()"></i>
+      </div>
+      <div>
+        <form class="exampl">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div style="background-color: #F5F5F5;">
+    <div class="flex-container del-pad">
+      <div class="del-det del-col">
+        <div class="flex-contain">
+          <div class="green">
+            <div class="act"><i class="fas fa-map-marked-alt fa-2x"></i></div>
+          </div>
+          <div class="delv">
+            <h5>Delivery Address</h5>
+            <div class="row" style="padding: 2%;">
+              <div class="col-4 bod-act" onclick="act(0)">
+                <h4>Suki Sind</h4>
+                <p>124 rd cross, D S Road,Kanakapura. Banglore,Karnataka-560078 Mobile No: 08025908063</p>
+              </div>
+              <div class="col-4 bod" style="margin-left: 3%;" onclick="act(1)">
+                <h4>David</h4>
+                <p>124 rd cross, D S Road,Kanakapura. Banglore,Karnataka-560078 Mobile No: 08025908063</p>
+              </div>
+              <div class="col-3 del-style" onclick="on()">
+                <!--<div class="check"><i class="fas fa-check"></i></div>-->
+                <i class="fas fa-plus-circle"></i>
+                <h6>Add Address</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-contain">
+          <div class="green">
+            <div class="loc-i"><i class="fas fa-wallet fa-2x"></i></div>
+          </div>
+          <div class="delv">
+            <h5>Payment Details</h5>
+            <div class="row" style="padding: 2%;">
+              <div style="padding: 3%;" id="fck">
+                  <input type="radio" id="card" name="pay" value="Credit">
+                  <label for="card">Credit/Debit Card   </label>
+                  <input type="radio" id="cod" name="pay" value="COD">
+                  <label for="cod">Cash on Delivery   </label>
+                  <input type="radio" id="upi" name="pay" value="UPI">
+                  <label for="upi">UPI</label>
+              </div>
+              <div class="col-4 shad shad-act" onclick="ac(0)">
+                <img src="./images/visa.png" style="width: 35%; height: auto;"><br><br>
+                <h5>**** **** **** 0817</h5><br>
+                <p>Expires on 10-23</p>
+              </div>
+              <div class="col-4 shad" style="margin-left: 3%;" onclick="ac(1)">
+                <img src="./images/master.png" style="width: 35%; height: auto;"><br><br>
+                <h5>**** **** **** 0817</h5><br>
+                <p>Expires on 10-23</p>
+              </div>
+              <div class="col-3 del-style">
+                <a href="profile.html#card"><i class="fas fa-plus-circle"></i>
+                <h6>Add New Card</h6></a>
+              </div>
+              <div style="margin-top: 3%;">
+                <div id="pay">
+                <h6>Payment now</h6>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="del-order">
+        <div class="del-col bord">
+        <h5>Order Details</h5>
+        <div style="padding: 4%;">
+        <div class="row det">
+          <div class="col-7">Price</div>
+          <div class="col-3">₹90</div>
+          <div class="col-7">Delivery Charges</div>
+          <div class="col-3">₹10</div>
+          <div class="col-7">Discount</div>
+          <div class="col-3">₹1.50</div>
+        </div>
+        <div class="row">
+          <div class="col-7">
+          <h5>Total Amount</h5>
+          <p style="color: red;">(Incl GST)</p>
+          </div>
+          <div class="col-3">₹98.50</div>
+        </div>
+        <div class="row som">
+          <div class="col-7">
+          <p>Your total savings</p></div>
+          <div class="col-3">₹1.50</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="checkout.js"></script>
+</body>
+</html>

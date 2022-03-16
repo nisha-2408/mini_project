@@ -69,7 +69,7 @@
 
       <header class="cart-header cf">
         <strong>Items in Your Cart</strong>
-        <span class="btn1">Checkout</span>
+        <a href="checkout.html" style="text-decoration: none;"><span class="btn1">Checkout</span></a>
       </header>
       <div class="cart-table">
         <ul>
@@ -83,12 +83,12 @@
                 </div>
               </div>
               <div class="item-block ib-qty">
-                <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" value="1" />
+                <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" value="1" onchange="total(0)" />
                 <span class="price">  ₹30</span>
               </div>
               <div class="item-block ib-total-price">
-                <span class="tp-price">₹200.00</span>
-                <span class="tp-remove"><i class="fas fa-trash-alt"></i></span>
+                <span class="tp-price">₹30.00</span>
+                <span class="tp-remove" onclick="delet(0)"><i class="fas fa-trash-alt"></i></span>
               </div>
             </div>
             <div class="item-foot cf">
@@ -105,12 +105,12 @@
                 </div>
               </div>
               <div class="item-block ib-qty">
-                <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" value="1" />
+                <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" value="1" onchange="total(1)"/>
                 <span class="price">  ₹10</span>
               </div>
               <div class="item-block ib-total-price">
-                <span class="tp-price">₹200.00</span>
-                <span class="tp-remove"><i class="fas fa-trash-alt"></i></span>
+                <span class="tp-price">₹10.00</span>
+                <span class="tp-remove" onclick="delet(1)"><i class="fas fa-trash-alt"></i></span>
               </div>
             </div>
             <div class="item-foot cf">
@@ -122,13 +122,13 @@
       <div class="sub-table cf">
         <div class="summary-block">
           <ul>
-            <li class="subtotal"><span class="sb-label">Subtotal</span><span class="sb-value">₹400.00</span></li>
+            <li class="subtotal"><span class="sb-label">Subtotal</span><span class="sb-value">₹40.00</span></li>
             <li class="shipping"><span class="sb-label">Shipping</span><span class="sb-value">n/a</span></li>
             <li class="tax"><span class="sb-label">Est. Tax |<i class="i-notch-down"></i></span></span><span
                 class="sb-value">₹50.00</span></li>
             <li class="tax-calculate"><input type="text" value="06484" class="tax" /><span class="btn">Calculate</span>
             </li>
-            <li class="grand-total"><span class="sb-label">Total</span><span class="sb-value">₹450.00</span></li>
+            <li class="grand-total"><span class="sb-label">Total</span><span class="sb-value">₹90.00</span></li>
           </ul>
         </div>
         <div class="copy-block">
@@ -142,11 +142,12 @@
       </div>
 
       <div class="cart-footer cf">
-        <span class="btn1">Checkout</span>
+        <a href="checkout.html" style="text-decoration: none;"><span class="btn1">Checkout</span></a>
         <span class="cont-shopping"><i class="i-angle-left"></i>Continue Shopping</span>
       </div>
     </div>
   </div>
+  <script src="cart.js"></script>
 </body>
 
 </html>

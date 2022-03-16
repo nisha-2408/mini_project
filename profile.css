@@ -11,6 +11,12 @@ body{
     transform-style: preserve-3d;
     animation: flip 0.5s;
 }
+.invalid{
+    color: red;
+}
+.valid{
+    color: green;
+}
 .pers{
     perspective: 5000px;
 }

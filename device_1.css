@@ -129,7 +129,7 @@ body{
 	color: white;
 	border-radius: 25px;	
 	margin-top: 5%;
-	box-shadow: 10px 13px 47px 9px rgba(145,163,242,1);
+	box-shadow: 10px 13px 47px 9px rgba(145,163,242,1), inset -10px -10px 15px 0px rgba(39,53,105,1), inset 10px 10px 15px 0px rgba(39,53,105,1);
 }
 .just-border {
 	border-left: 1px solid grey;
@@ -241,7 +241,7 @@ body{
 }
 .rating-star {
     margin-left: 5%;
-	border-left: 1px solid grey;
+	border-left: 1px solid #e6e6e6;
 }
 .value-container {
     position: relative;
@@ -254,7 +254,7 @@ body{
 }
 .reviews {
 	padding: 2%;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #e6e6e6;
 }
 .reviews i{
 	color: #ff9933;
@@ -262,7 +262,7 @@ body{
 .review {
 	margin-top: 3%;
 	padding: 3%;
-	border-top: 1px solid grey;
+	border-top: 1px solid #e6e6e6;
 	background-image: url("./images/user-rating.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
