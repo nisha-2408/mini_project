@@ -1,0 +1,80 @@
+
+
+.product{
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: rgb(244, 255, 255);
+}
+
+.product-category{
+  padding: 0 10px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+
+}
+.product-container{
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  height: 100%;
+  scroll-behavior: none;
+
+}
+.product-container::-webkit-scrollbar{
+  display: none;
+}
+
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.card:hover{
+transform: scale(1.1);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+border-style: solid;
+border-color: black;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+.card button:hover {
+
+  opacity: 0.7;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
