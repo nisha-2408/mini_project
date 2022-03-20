@@ -116,12 +116,9 @@
               <h5>Sed ut perspiciatis unde omnis iste natus error</h5>
             </center>
           </div>
-          <div class="row" id="il" style="padding: 3%;">
-            <div class="col-2">
-              <a href="#" style="padding: 40%; float:left;"><i class="fas fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-8">
-              <div class="row">
+          <div class="swiper mySwiper" id="il" style="padding: 3%;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide row just">
                 <div class="col-6" style="border: 1px solid black; padding:2%;">
                   <div>
                     <img src="./images/test image.webp">
@@ -157,10 +154,46 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide row just">
+                <div class="col-6" style="border: 1px solid black; padding:2%;">
+                  <div>
+                    <img src="./images/test image.webp">
+                    <span style="float:right;">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="far fa-star" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="cont1" style="padding: 5%;">
+                    <h4>Stop the nonsense.... don't lie..... be genuine... this website is very helpful..
+                      check out the know what you take section before u go for any medicine blindly..
+                    </h4>
+                  </div>
+                </div>
+                <div class="col-6" style="border: 1px solid black; padding:2%">
+                  <div>
+                    <img src="./images/test image.webp">
+                    <span style="float:right;">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                      <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                  <div class="cont1" style="padding: 5%;">
+                    <h4>Stop the nonsense.... don't lie..... be genuine... this website is very helpful..
+                      check out the know what you take section before u go for any medicine blindly..
+                    </h4>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-2">
-              <a href="#" style="padding:40%; float:right;"><i class="fas fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
-            </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              </div>
           </div>
           <div class="row" style="background-color: rgb(248, 246, 246); padding: 5%;">
             <div class="col" style="margin-right: 2%; background-color: white;">
@@ -230,5 +263,16 @@
           <script src="details.js">
             
           </script>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     </body>
 </html>

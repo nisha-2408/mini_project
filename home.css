@@ -8,7 +8,14 @@
   width: 100%;
   height: 100%;
 }
-
+.y2 a{
+  text-decoration: none;
+  color: white;
+}
+.y2 a:hover{
+  text-decoration: none;
+  color: white;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
