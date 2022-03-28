@@ -16,6 +16,14 @@
   text-decoration: none;
   color: white;
 }
+.y a{
+  text-decoration: none;
+  color: white;
+}
+.y a:hover{
+  text-decoration: none;
+  color: white;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
