@@ -4,6 +4,10 @@
   height:fit-content;
   background-size: 100%;
 }
+.k a, .k a:hover{
+  text-decoration: none;
+  color: black;
+}
 .swiper {
   width: 100%;
   height: 100%;
