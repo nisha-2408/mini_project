@@ -1,3 +1,16 @@
+<?php
+
+include 'config/database.php';
+$name=null;
+$sql = "SELECT * FROM user WHERE loggedIN = 1";
+$result = mysqli_query($conn, $sql);
+$loger = mysqli_fetch_all($result);
+foreach ($loger as $use):
+  $name =  $use[1];
+endforeach
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -20,6 +33,25 @@
   <script src="https://kit.fontawesome.com/4a6a8e48e5.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function LogOut(){
+      id = <?php echo $use[0]; ?>;
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if(this.readyState==4 &&this.status==200){
+          console.log(this.responseText);
+        }
+      }
+      xmlhttp.open("POST", "logout.php?ID="+id, true);
+      xmlhttp.send();
+      console.log("Done");
+      location.reload();
+      location.reload();
+    }
+  </script>
+
+
 </head>
 
 <body>
@@ -45,9 +77,9 @@
         <div class="col-3">
           <span class="login">
             <div class="sd">
-              <a href="home.html"><i class="fas fa-home"></i>HOME</a>
-              <a href="login.html"><i class="fas fa-users"></i>LOGIN/SIGN UP</a>
-              <a href="cart-alt.html"><i class="fas fa-cart-plus"></i>CART</a>
+              <a href="index.php"><i class="fas fa-home"></i>HOME</a>
+              <a href="login.php"><i class="fas fa-users"></i>LOGIN/SIGN UP</a>
+              <a href="cart-alt.php"><i class="fas fa-cart-plus"></i>CART</a>
             </div>
           </span>
         </div>
@@ -73,10 +105,15 @@
               <img src="./images/outline_account_circle_black_24dp.png">
             </div>
             <div class="col-10" style="padding: 3%;">
-              <h5 style="float: left;">Log In/Sign Up <i class="fas fa-angle-right"></i></h5>
+              <h5 style="float: left;"><?php if($name){echo $name;} else {echo "Login/ SignUp";}   ?> <i class="fas fa-angle-right"></i></h5>
+              
             </div>
           </div>
         </a>
+        <?php if($name): ?>
+        <form action="logout.php">
+        <input type="submit" value="logout"></form>
+        <?php endif ?>
         <div onclick="order()">
           <h5 class="icon"><i class="fab fa-opencart"></i> My Orders <i class="fas fa-angle-right"></i></h5>
         </div>

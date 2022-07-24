@@ -45,8 +45,8 @@
           <span class="login">
             <div class="sd">
               <a href="index.php"><i class="fas fa-home"></i>HOME</a>
-              <a href="profile.html"><i class="fas fa-address-card"></i>PROFILE</a>
-              <a href="cart-alt.html"><i class="fas fa-cart-plus"></i>CART</a>
+              <a href="profile.php"><i class="fas fa-address-card"></i>PROFILE</a>
+              <a href="cart-alt.php"><i class="fas fa-cart-plus"></i>CART</a>
             </div>
           </span>
         </div>
@@ -74,20 +74,17 @@
             <h2 style="text-align: center;">LOGIN</h2>
           </div>
           <div>
-            <form style="padding:0% 10% 0% 10%;" action="home.html">
+            <form style="padding:0% 10% 0% 10%;" action="log.php" method="get">
               <label for="uname">User Name: </label><br>
-              <input type="text" id="uname" name="uname" class="form" placeholder="&#xf007; Enter your username"
-                style="font-family:Arial, FontAwesome"><br>
+              <input type="text" id="uname" name="uname" class="form" placeholder="&#xf007; Enter your username" style="font-family:Arial, FontAwesome"><br>
               <label for="password">Password: </label><br>
-              <input type="password" id="password" name="password" class="form"
-                placeholder="&#xf023; Enter your password" style="font-family:Arial, FontAwesome">
+              <input type="password" id="password" name="password" class="form" placeholder="&#xf023; Enter your password" style="font-family:Arial, FontAwesome">
               <a href="#" style="margin-right:2%;">
                 <p style="text-align: right;">Forgot Password?</p>
               </a>
               <div>
-                <button type="submit" class="log">
-                  <h5>LOGIN</h5>
-                </button>
+                <input type="submit" class="log">
+                </input>
               </div>
             </form>
             <div style="padding: 1%; text-align: center;">
@@ -112,25 +109,22 @@
             <h2 style="text-align: center;">SIGN UP</h2>
           </div>
           <div>
-            <form style="padding:0% 10% 0% 10%;" method="post" action="home.html" id="sign">
-              
+            <form style="padding:0% 10% 0% 10%;" method="post" action="user.php" id="sign">
+
               <label for="uname">User Name: </label><br>
-              <input type="text" id="uname" name="uname" class="form" placeholder="&#xf007; Enter your username"
-                style="font-family:Arial, FontAwesome" required><br>
-                <p>Username must be alphanumeric and contain 5-12 characters</p>
+              <input type="text" id="uname" name="uname" class="form" placeholder="&#xf007; Enter your username" style="font-family:Arial, FontAwesome" required><br>
+              <p>Username must be alphanumeric and contain 5-12 characters</p>
               <label for="mail">Email: </label><br>
-              <input type="email" id="mail" name="mail" class="form" placeholder="&#xf023; Enter your email"
-                style="font-family:Arial, FontAwesome" required><br>
+              <input type="email" id="mail" name="mail" class="form" placeholder="&#xf023; Enter your email" style="font-family:Arial, FontAwesome" required><br>
               <label for="cpassword">Password: </label><br>
-              <input type="password" id="password" name="password" class="form"
-                placeholder="&#xf023; Confirm your password" style="font-family:Arial, FontAwesome" required><br>
-                <p>Must alphanumberic(@,_,- also allowed) and contain 8-20 characters</p>
+              <input type="password" id="password" name="password" class="form" placeholder="&#xf023; Confirm your password" style="font-family:Arial, FontAwesome" required><br>
+              <p>Must alphanumberic(@,_,- also allowed) and contain 8-20 characters</p>
               <input type="checkbox">
               <p>Remember Me</p>
               <div>
-                <button type="submit" class="log">
-                  <h5>SIGN UP</h5>
-                </button>
+                <input type="submit" class="log">
+                <h5>SIGN UP</h5>
+                </input>
               </div>
               <div style="text-align: center;">
                 <p>Already Registered?</p>

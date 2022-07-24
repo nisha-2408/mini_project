@@ -2,15 +2,16 @@
 
 
 
-$sql = 'SELECT * FROM products WHERE product_id IN (SELECT product_id FROM cart)';
+$sql = 'SELECT * FROM cart';
 $result = mysqli_query($conn, $sql);
+$rows = mysqli_num_rows($result);
 $prod_list = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 if(isset($_GET['quantity'])){
   echo 'ntng';
   echo $_GET['quantity'];
 }
-
+$sum=0;
  ?>
 
 <!DOCTYPE html>
@@ -35,6 +36,42 @@ if(isset($_GET['quantity'])){
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="home.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+  <script>
+    function Delete(id){
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if(this.readyState==4 &&this.status==200){
+          console.log(this.responseText);
+        }
+      }
+      xmlhttp.open("GET", "delete_cart.php?id="+id, true);
+      xmlhttp.send();
+      console.log("Done");
+      location.reload();
+      location.reload();
+    }
+
+
+    function total(id, event){
+      var qty = event.target.value;
+      console.log(qty);
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if(this.readyState==4 &&this.status==200){
+          console.log(this.responseText);
+        }
+      }
+      xmlhttp.open("GET", "qty.php?id="+id+"&qty="+qty, true);
+      xmlhttp.send(null);
+      console.log("Done");
+      location.reload();
+    }
+
+  </script>
+
+
 </head>
 
 <body>
@@ -80,7 +117,14 @@ if(isset($_GET['quantity'])){
         </form>
       </div>
     </div>
+    
     <div class="wrap">
+    <?php if($rows==0): ?>
+      <div>
+        <img src="./images/empty-cart.png" style="margin-left: 25%">
+      </div>
+    
+      <?php else: ?>
 
       <header class="cart-header cf">
         <strong>Items in Your Cart</strong>
@@ -89,24 +133,25 @@ if(isset($_GET['quantity'])){
       <div class="cart-table">
         <ul>
           <?php
-          foreach ($prod_list as $item) : ?>
+          foreach ($prod_list as $item) : 
+          ?>
             <li class="item">
             <div class="item-main cf">
               <div class="item-block ib-info cf">
-                <img class="product-img" src=<?php echo $item['image']; ?> />
+                <img class="product-img" src=<?php echo $item['imag']; ?> />
                 <div class="ib-info-meta">
-                  <span class="title"><?php echo $item['product_name'] ?></span>
+                  <span class="title"><?php echo $item['nam'] ?></span>
                   <span class="itemno">#3498765</span>
                 </div>
               </div>
               <div class="item-block ib-qty">
-                <h6>QTY: <?php echo $item['qty'] ?></h6>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" value = <?php echo $item['qty'] ;?> onchange="total(<?php echo $item['product_id'] ?>, event)"/>
                 
                 <span class="price">  ₹<?php echo $item['price'] ?></span>
               </div>
               <div class="item-block ib-total-price">
-                <span class="tp-price">₹<?php echo ($item['price']*$item['qty'] ) ?></span>
-                <span class="tp-remove" onclick="delet(1)"><i class="fas fa-trash-alt"></i></span>
+                <span class="tp-price">₹<?php echo ($item['price']* $item['qty'] ); $sum = $sum+($item['price']*$item['qty']); ?></span>
+                <span class="tp-remove" onclick="Delete( <?php echo $item['product_id'] ?> )"><i class="fas fa-trash-alt"></i></span>
               </div>
             </div>
             <div class="item-foot cf">
@@ -119,13 +164,13 @@ if(isset($_GET['quantity'])){
       <div class="sub-table cf">
         <div class="summary-block">
           <ul>
-            <li class="subtotal"><span class="sb-label">Subtotal</span><span class="sb-value">₹40.00</span></li>
+            <li class="subtotal"><span class="sb-label">Subtotal</span><span class="sb-value">₹<?php echo $sum ?></span></li>
             <li class="shipping"><span class="sb-label">Shipping</span><span class="sb-value">n/a</span></li>
             <li class="tax"><span class="sb-label">Est. Tax |<i class="i-notch-down"></i></span></span><span
                 class="sb-value">₹50.00</span></li>
             <li class="tax-calculate"><input type="text" value="06484" class="tax" /><span class="btn">Calculate</span>
             </li>
-            <li class="grand-total"><span class="sb-label">Total</span><span class="sb-value">₹90.00</span></li>
+            <li class="grand-total"><span class="sb-label">Total</span><span class="sb-value">₹<?php echo $sum+50 ?></span></li>
           </ul>
         </div>
         <div class="copy-block">
@@ -142,9 +187,10 @@ if(isset($_GET['quantity'])){
         <a href="checkout.html" style="text-decoration: none;"><span class="btn1">Checkout</span></a>
         <span class="cont-shopping"><i class="i-angle-left"></i>Continue Shopping</span>
       </div>
+      <?php endif ?>
     </div>
+    
   </div>
-  <script src="cart.js"></script>
 </body>
 
 </html>

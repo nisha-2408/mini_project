@@ -1,7 +1,7 @@
 <?php include 'config/database.php';
 $aDoor = $_POST['formDoor'];
 if (empty($aDoor)) {
-    echo ("You didn't select any buildings.");
+    echo ("You didn't select any brand.");
 } else {
     $N = count($aDoor);
 

@@ -2,10 +2,9 @@
 
 <?php
 $sql = 'SELECT * FROM products';
-$arr = array();
 $result = mysqli_query($conn, $sql);
 $prod_list = mysqli_fetch_all($result, MYSQLI_ASSOC);
-array_push($arr, $prod_list);
+
 
 ?>
 
@@ -33,6 +32,21 @@ array_push($arr, $prod_list);
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="home.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script>
+
+    function addToCart(id){
+      console.log(id);
+      var add = new XMLHttpRequest();
+      add.onreadystatechange = function() {
+        if(this.readyState==4 && this.status==200){
+          console.log(this.responseText);
+        }
+      }
+      add.open("POST", "cart1.php?id="+id, true);
+      add.send();
+    }
+  </script>
 </head>
 
 <body>
@@ -479,6 +493,7 @@ array_push($arr, $prod_list);
         </div>
         <div class="row" style="padding: 5%; position: relative; z-index: 0;">
           <?php foreach ($prod_list as $item) : ?>
+            
             <div class="col-3 cards card">
               <a href="device_1.html" class="info">
                 <div>
@@ -493,11 +508,7 @@ array_push($arr, $prod_list);
               </a>
               <div class="add-cart w3-animate-top">
                 <center>
-                  <form method="post" action="cart1.php">
-                    <input type="hidden" name="product_id" value=<?php echo $item['product_id']?>>
-                    <input type="number" name="qty" step="1" max="5" min="1" value="1">
-                    <input type="submit" name="add-card" value="<h5>Add to Cart</h5>">
-                  </form>
+                <h5 onclick="addToCart(<?php echo $item['product_id'] ?>)">Add to Cart</h5>
                 </center>
               </div>
             </div>

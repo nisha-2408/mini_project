@@ -76,7 +76,7 @@
             <div class="klc">
               <h4>"Life isn't about waiting for the storm to pass, it's about learning how to dance in rain"</h4>
             </div>
-            <div class="bn"><a href="http://localhost/mini_project/devices.php">BUY NOW!</a></div>
+            <div class="bn"><a href="http://localhost/mini_project/devices.php" target="_blank">BUY NOW!</a></div>
           </div>
         </div>
         <div class="col dis"><img src="./images/slider-hero-img.png" class="zoom"></div>
